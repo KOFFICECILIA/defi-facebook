@@ -113,7 +113,9 @@ ul li{
     font-weight: bold;
 }
 
-
+.my-firstnav ul li a:hover{
+    color: var(--color-primary);
+}
 
 .my-nav{
     margin: .5rem 5rem 1.5rem 5rem;
@@ -125,13 +127,14 @@ ul li{
 .my-nav ul{
     display: flex;
     justify-content: space-between;
+    background-color: var(--color-primary);
 }
 
 .my-nav ul li{
     padding: 1rem;
     flex: 1;
     text-align: center;
-    background-color: var(--color-primary);
+    transition: all .7s;
 }
 
 .my-nav ul li a{
@@ -141,7 +144,7 @@ ul li{
     font-size: 1.7rem;
 }
 
-.my-nav ul li a:hover{
+.my-nav ul li:hover{
     background-color: var(--color-secondary);
 }
 
@@ -205,6 +208,7 @@ ul li{
     margin-top: 35%;
     font-size: 1.5rem;
     border-radius: 25px;
+    transition: all .6s;
     background-color: var(--color-primary);
 }
 
@@ -310,6 +314,14 @@ ul li{
     background-color: rgba(206, 204, 204, 0.815);
 }
 
+.my-card_right a, .my-card_left a{
+    color: var(--color-primary);
+}
+
+.my-card_right a:hover, .my-card_left a:hover{
+    color: var(--color-secondary);
+}
+
 .block-content_right{
     text-align: center;
 }
@@ -389,6 +401,14 @@ ul li{
     margin-right: 2rem;
 }
 
+.product-name{
+    color: var(--color-primary);
+}
+
+.product-name:hover{
+    color: var(--color-secondary);
+}
+
 /* page 2 */
 
 .block-left, .block-right{
@@ -401,7 +421,6 @@ ul li{
 }
 
 .call-box{
-    height: 30rem;
     margin: 1rem;
 }
 
@@ -428,9 +447,34 @@ ul li{
 }
 
 .shop-info{
-    height: 5rem;
     border: 1px solid black;
 }
+.shop-info ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-info ul li{
+    flex: 1;
+    text-align: center;
+    padding: 1.5rem .5rem;
+}
+
+.shop-info ul li a{
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.shop-info ul li:hover a{
+    color: var(--color-secondary);
+}
+
+.pay-icon{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
 
 /******************* footer ***************/
 
