@@ -8,3 +8,15 @@ function changeimg(url,e) {
     e.classList.add('active');
   
   }
+
+
+  // palette de couleur
+
+  var palette_color = document.getElementById("palette-color");
+var choixColor = document.getElementById("choixColor");
+palette_color.onchange = function() {
+	choixColor.style.backgroundColor = palette_color.value;
+  palette_color.style.backgroundColor = palette_color.value;
+}
+choixColor.style.backgroundColor = palette_color.value;
+
